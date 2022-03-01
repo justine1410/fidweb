@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://fidweb-dev.fr/</title>
+  <link>https://fidweb-dev.fr/</link>
+
+<item>
+     <link>https://fidweb-dev.fr/</link>
+     <title>FIDWEB - création et maintenance de site internet</title>
+     <description>Agence de création de site internet personnaliser pour votre entreprise (restaurant, boutique, brocante, gîte...).</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://fidweb-dev.fr/index.html</link>
+     <title>FIDWEB - création et maintenance de site internet</title>
+     <description>Agence de création de site internet personnaliser pour votre entreprise (restaurant, boutique, brocante, gîte...).</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://fidweb-dev.fr/portfolio.html</link>
+     <title>FIDWEB - création et maintenance de site internet</title>
+     <description>Exemple de site internet (restaurant, site d'association, institut de beauté...)</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://fidweb-dev.fr/contact.html</link>
+     <title>FIDWEB - création et maintenance de site internet</title>
+     <description>Agence de création de site internet personnaliser pour votre entreprise (restaurant, boutique, brocante, gîte...).</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://fidweb-dev.fr/mention.html</link>
+     <title>FIDWEB - création et maintenance de site internet</title>
+     <description>Agence de création de site internet personnaliser pour votre entreprise (restaurant, boutique, brocante, gîte...).</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

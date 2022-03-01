@@ -1,0 +1,225 @@
+.contact {
+    width: 30%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;  
+  
+    .contact-infos {
+      background-image: radial-gradient(#e5dcf1 0%, transparent 40%, #BEA9DE);
+      bottom: 0;
+      position: relative;
+      width: 100%;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top-left-radius: 90%;
+      .address{
+        @include gradient-color;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        .content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .email{
+        @include gradient-color;
+        position: absolute;
+        top: 30%;
+        right: 45%;
+  
+        .content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .phone{
+        @include gradient-color;
+        position: absolute;
+        top: 60%;
+        right: 70%;
+  
+        .content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .logo{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        img{
+          width: 70%;
+        }
+      }
+      .credits{
+        position: absolute;
+        top: 90%;
+      }
+  
+      h4 {
+        color: $color-4;
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 10px;
+  
+      }
+      
+    }
+  }
+.contact-form{
+  display: flex;
+  form {
+    width: 35%;
+    margin-left: 20%;
+    animation: transformPage 2.5s;
+    @keyframes transformForm {
+      from{
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    h2 {
+      margin-bottom: 20px;
+  
+    }
+    .form-content {
+      display: flex;
+      flex-direction: column;
+      input,
+      textarea {
+        background: none;
+        font-size: 20px;
+        border-bottom: 1px solid $color-2;
+      }
+      input {
+        padding: 24px 0 12px;
+        width: 100%;
+      }
+      textarea {
+        padding: 24px 0;
+        margin-bottom:20px
+      }
+    }
+  }
+  
+}
+
+
+  /* mobile */
+  @media screen and (min-width:320px) and (max-width:750px){
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    .contact-form{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      margin-left: 5%;
+      form{
+        width: 90%;
+        margin-left: inherit;
+      }
+      
+    }
+    .contact{
+      width: 100%;
+      position: inherit;
+      .contact-infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top-left-radius: inherit;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        .address, .email, .phone, .credits{
+          position: initial;
+          margin-top: 10px;
+          .content{
+            h4{
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .logo{
+          display: none;
+        }
+        
+      }
+  
+    }
+  }
+      
+}
+
+/* tablette */
+@media screen and (min-width:750px) and (max-width:1100px){
+  .contact{ 
+    position: inherit; 
+    width: 100%;
+
+    .contact-infos{
+      display: flex;
+      position: inherit;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-top-left-radius: inherit;
+      width: 100%;
+      margin-left: 0;
+      margin-top: auto;
+      .address, .email, .phone, .credits{
+        position: initial;
+        margin-top: 10px;
+        .content{
+          h4{
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .logo{
+        display: none;
+      }
+
+    }
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    form{
+      margin-left: 0;
+      h2{
+        &::after{
+          left:200px
+        }
+  
+    }
+    }
+  }
+
+}
+
+/* grand ecran */
+@media screen and (min-width:1500px) {
+  .contact-infos{
+    margin-top: 0%;
+  }
+}
+
+
+

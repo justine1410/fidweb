@@ -1,9 +1,9 @@
 $font1: 'arial', cursive;
 
 $color-1: rgba(190,169,222,0.4);
-$color-2: white;
-$color-3: white;
-$color-4: white;
+$color-2: whiteSmoke;
+$color-3: whiteSmoke;
+$color-4: whiteSmoke;
 $black: rgb(40, 40, 40);
 $red: rgb(253, 87, 87);
 
@@ -38,7 +38,6 @@ body {
   // background: #23074d;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: $black;
     img{
       position: fixed;
       top: 0;
@@ -46,6 +45,10 @@ body {
       min-width: 100%;
       min-height: 0;
       z-index: -1;
+    }
+    height: 100vh;
+    .app{
+      height: 100vh;
     }
 }
 
@@ -58,6 +61,11 @@ body {
   z-index: 1;
 }
 
+.encours{
+  height: 55px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .button {
   height: 55px;
   border-radius: 50px;
@@ -99,14 +107,15 @@ body {
 }
 
 @mixin explication{
-  width: 300px;
+ 
+  width: 400px;
   height: 300px;
   font-size: 25px;
   margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   text-align: center;
   padding: 20px;
   color: whitesmoke;

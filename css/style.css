@@ -9,7 +9,7 @@
 }
 *::selection {
   color: rgba(190, 169, 222, 0.4);
-  background: white;
+  background: whiteSmoke;
 }
 
 html {
@@ -17,16 +17,16 @@ html {
 }
 
 a {
-  color: white;
+  color: whiteSmoke;
 }
 
 a:hover {
   text-decoration: none;
-  color: white;
+  color: whiteSmoke;
 }
 
 body {
-  color: #282828;
+  height: 100vh;
 }
 body img {
   position: fixed;
@@ -36,6 +36,9 @@ body img {
   min-height: 0;
   z-index: -1;
 }
+body .app {
+  height: 100vh;
+}
 
 .header {
   display: flex;
@@ -44,6 +47,12 @@ body img {
   position: fixed;
   top: 0;
   z-index: 1;
+}
+
+.encours {
+  height: 55px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .button {
@@ -82,6 +91,137 @@ body img {
     transform: scale(1);
   }
 }
+main .home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+main .home-main .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 100%;
+  animation: transformLogo 2.5s ease forwards;
+}
+main .home-main .main-content h1, main .home-main .main-content h2 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 100;
+  font-family: "arial", cursive;
+  user-select: text;
+  color: white;
+}
+main .home-main .service {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "arial", cursive;
+  font-size: 30px;
+  font-weight: inherit;
+  color: whiteSmoke;
+}
+main .home-main .service p {
+  margin-bottom: 50px;
+}
+main .service_explication {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 215px;
+  font-family: "arial", cursive;
+  font-size: 30px;
+  font-weight: inherit;
+  color: whiteSmoke;
+  scroll-behavior: smooth;
+}
+main .service_explication .dispo1, main .service_explication .dispo2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+main .service_explication .dispo1 .explication1, main .service_explication .dispo2 .explication1 {
+  width: 400px;
+  height: 300px;
+  font-size: 25px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  background: linear-gradient(to top, #434343, transparent, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: apparition 1.5s;
+}
+main .service_explication .dispo1 .explication2, main .service_explication .dispo2 .explication2 {
+  width: 400px;
+  height: 300px;
+  font-size: 25px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  background: linear-gradient(to top, #434343, transparent, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: apparition 2.5s;
+}
+main .service_explication .dispo1 .explication3, main .service_explication .dispo2 .explication3 {
+  width: 400px;
+  height: 300px;
+  font-size: 25px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  background: linear-gradient(to top, #434343, transparent, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: apparition 3.5s;
+}
+main .service_explication .dispo1 .explication4, main .service_explication .dispo2 .explication4 {
+  width: 400px;
+  height: 300px;
+  font-size: 25px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  background: linear-gradient(to top, #434343, transparent, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: apparition 4.5s;
+}
+
 .home {
   display: flex;
   flex-direction: row;
@@ -98,7 +238,7 @@ body img {
 .home .navigation {
   font-size: 30px;
   line-height: 40px;
-  color: white;
+  color: whiteSmoke;
   font-family: "arial", cursive;
   user-select: none;
   width: 100%;
@@ -123,136 +263,46 @@ body img {
   transition: 0.5s;
 }
 
-.home-main {
+.footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 200px;
-}
-.home-main .main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  border-radius: 100%;
-  animation: transformLogo 2.5s ease forwards;
-}
-.home-main .main-content h1, .home-main .main-content h2 {
-  font-size: 80px;
-  font-style: italic;
-  font-weight: 100;
-  font-family: "arial", cursive;
-  user-select: text;
-  color: white;
-}
-.home-main .service {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "arial", cursive;
-  font-size: 30px;
-  font-weight: inherit;
-  color: white;
-}
-.home-main .service p {
-  margin-bottom: 50px;
-}
-
-.service_explication {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "arial", cursive;
-  font-size: 30px;
-  font-weight: inherit;
-  color: white;
-  scroll-behavior: smooth;
-}
-.service_explication .dispo1, .service_explication .dispo2 {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  justify-content: space-evenly;
-}
-.service_explication .dispo1 .explication1, .service_explication .dispo2 .explication1 {
-  width: 300px;
-  height: 300px;
-  font-size: 25px;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 20px;
-  color: whitesmoke;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  padding: 15px;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, transparent, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #434343, transparent, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation: apparition 1.5s;
 }
-.service_explication .dispo1 .explication2, .service_explication .dispo2 .explication2 {
-  width: 300px;
-  height: 300px;
-  font-size: 25px;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 20px;
-  color: whitesmoke;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: inset 0 1px 20px 1px #d0d0d0;
-  background: linear-gradient(to top, #434343, transparent, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation: apparition 2.5s;
+.footer .navigation {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "arial", cursive;
+  user-select: none;
+  width: 100%;
 }
-.service_explication .dispo1 .explication3, .service_explication .dispo2 .explication3 {
-  width: 300px;
-  height: 300px;
-  font-size: 25px;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 20px;
-  color: whitesmoke;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: inset 0 1px 20px 1px #d0d0d0;
-  background: linear-gradient(to top, #434343, transparent, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation: apparition 3.5s;
+.footer .navigation p {
+  color: whiteSmoke;
 }
-.service_explication .dispo1 .explication4, .service_explication .dispo2 .explication4 {
-  width: 300px;
-  height: 300px;
-  font-size: 25px;
-  margin: 30px;
+.footer .navigation ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 20px;
-  color: whitesmoke;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: inset 0 1px 20px 1px #d0d0d0;
-  background: linear-gradient(to top, #434343, transparent, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation: apparition 4.5s;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+  background: linear-gradient(10deg, #6f1e51, #f150b5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.footer .navigation ul li:hover {
+  transform: scale(1.2);
+}
+.footer .navigation .nav-portfolio {
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
 }
 
 /* mobile */
@@ -354,7 +404,7 @@ body img {
   font-weight: normal;
   margin-top: 20%;
   margin-bottom: 12px;
-  color: white;
+  color: whiteSmoke;
   transform: scaleX(0);
   animation: transformTitle 1.9s ease forwards;
   transform-origin: 100%;
@@ -366,7 +416,7 @@ body img {
 }
 .container .project .project-main .project-content p {
   margin-bottom: 10px;
-  color: white;
+  color: whiteSmoke;
   font-family: "arial", cursive;
   font-size: 30px;
 }
@@ -378,7 +428,7 @@ body img {
 .container .project .project-main .project-content ul i {
   font-size: 30px;
   margin: 5px;
-  color: white;
+  color: whiteSmoke;
 }
 .container .project .project-main .img-content {
   text-align: left;
@@ -400,7 +450,7 @@ body img {
 }
 .container .project .project-main .img-content .img-container i {
   position: absolute;
-  color: white;
+  color: whiteSmoke;
   margin-left: 45%;
   margin-top: 25%;
   opacity: 0.7;
@@ -441,7 +491,7 @@ body img {
 }
 .container .project .project-main .img-content .img-container .description h3 {
   padding-bottom: 10px;
-  color: white;
+  color: whiteSmoke;
 }
 .container .carousel-control-prev {
   opacity: 1;
@@ -457,7 +507,7 @@ body img {
   background-image: none;
 }
 .container .carousel-control-prev-icon i, .container .carousel-control-next-icon i {
-  color: white;
+  color: whiteSmoke;
   font-size: 40px;
 }
 .container .carousel-control-prev-icon:hover, .container .carousel-control-next-icon:hover {
@@ -613,7 +663,7 @@ body img {
   top: 90%;
 }
 .contact .contact-infos h4 {
-  color: white;
+  color: whiteSmoke;
   font-size: 20px;
   font-weight: 200;
   margin-bottom: 10px;
@@ -646,7 +696,7 @@ body img {
 .contact-form form .form-content textarea {
   background: none;
   font-size: 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid whiteSmoke;
 }
 .contact-form form .form-content input {
   padding: 24px 0 12px;

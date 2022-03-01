@@ -1,3 +1,85 @@
+main{
+  .home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      user-select:none;
+      border-radius: 100%;
+      animation: transformLogo 2.5s ease forwards;
+      h1, h2{
+        font-size: 80px;
+        font-style: italic;
+        font-weight: 100;
+        font-family: $font1;
+        user-select: text;
+        color: white;
+
+      }
+    }
+    .service{
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $font1;
+      font-size: 30px;
+      font-weight:inherit;
+      color: $color-4;
+      p{
+        margin-bottom: 50px;
+      }
+} 
+  }
+
+  .service_explication{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 215px;
+  font-family: $font1;
+  font-size: 30px;
+  font-weight:inherit;
+  color: $color-4;
+  scroll-behavior:smooth;
+
+  .dispo1, .dispo2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  .explication1{
+    @include explication;
+    animation: apparition 1.5s ;
+
+  }
+  .explication2{
+    @include explication;
+    animation:apparition 2.5s;
+
+  }
+  .explication3{
+    @include explication;
+    animation: apparition 3.5s ;
+
+  }
+  .explication4{
+    @include explication;
+    animation: apparition 4.5s ;
+
+  }
+
+  }  
+  }
+
+}
+
 .home{
     display: flex;
     flex-direction: row;
@@ -39,83 +121,46 @@
       }
 
 }
-.home-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 200px;
-        .main-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          user-select:none;
-          border-radius: 100%;
-          animation: transformLogo 2.5s ease forwards;
-          h1, h2{
-            font-size: 80px;
-            font-style: italic;
-            font-weight: 100;
-            font-family: $font1;
-            user-select: text;
-            color: white;
-
-          }
-        }
-        .service{
-          margin-top: 100px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-family: $font1;
-          font-size: 30px;
-          font-weight:inherit;
-          color: $color-4;
-          p{
-            margin-bottom: 50px;
-          }
-    } 
-  }
-  .service_explication{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: $font1;
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343,transparent, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343,transparent, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .navigation {
     font-size: 30px;
-    font-weight:inherit;
-    color: $color-4;
-    scroll-behavior:smooth;
-
-  .dispo1, .dispo2{
-    display: flex;
-    flex-wrap: wrap;
+    line-height: 40px;
+    font-family: $font1;
+    user-select:none;
     width: 100%;
-    justify-content: space-evenly;
-    .explication1{
-      @include explication;
-      animation: apparition 1.5s ;
 
-    }
-    .explication2{
-      @include explication;
-      animation:apparition 2.5s;
-
-    }
-    .explication3{
-      @include explication;
-      animation: apparition 3.5s ;
-
-    }
-    .explication4{
-      @include explication;
-      animation: apparition 4.5s ;
-
+    p{
+      color: $color-2;
     }
 
-  }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 15px;
+      @include gradient-color;
+      
+        li:hover{
+          transform:scale(1.2);
+      }
+      
+    }
   
+    .nav-portfolio {
+      cursor: pointer;
+      display: flex;
+      transition: .5s;
+    }
+  }
+
 }
 
 

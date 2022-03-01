@@ -27,18 +27,32 @@ html {
   scroll-behavior: smooth;
 } 
 a{
-  color: $color-4;
+  color: $color-2;
 }
 a:hover{
   text-decoration: none;
-  color: $color-4;
+  color: $color-2;
 
 }
 body {
-  // background: #23074d;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    img{
+  h1{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: $font1;
+    user-select: text;
+  }
+  h2{
+    margin: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: $font1;
+    user-select: text;
+
+  }
+    .fond{
       position: fixed;
       top: 0;
       left: 0;
@@ -47,19 +61,12 @@ body {
       z-index: -1;
     }
     height: 100vh;
+    color: $color-2;
     .app{
       height: 100vh;
     }
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
 
 .encours{
   height: 55px;
@@ -125,6 +132,7 @@ body {
   background: linear-gradient(to top, #434343,transparent, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+
 @keyframes apparition {
   0%{
     transform: scale(0);
@@ -134,3 +142,4 @@ body {
     transform: scale(1);
   }
 }
+

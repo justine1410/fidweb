@@ -11,15 +11,7 @@
     user-select:none;
     border-radius: 100%;
     animation: transformLogo 2.5s ease forwards;
-    h1, h2{
-      font-size: 80px;
-      font-style: italic;
-      font-weight: 100;
-      font-family: $font1;
-      user-select: text;
-      color: white;
-
-    }
+    
   }
   .service{
     margin-top: 100px;
@@ -51,6 +43,7 @@ margin-bottom: 90px;
 .dispo1, .dispo2{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
   width: 100%;
   justify-content: space-evenly;
     .explication1{

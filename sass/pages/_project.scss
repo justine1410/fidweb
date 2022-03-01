@@ -1,157 +1,43 @@
-
 .container{
-    margin-top: -150px;
-    .project {
-      margin-top: 100px;
-      .project-main {
-          margin-top: 50px;
-          margin-bottom: 20px;
-        .project-content {
-          margin-top: -100px;
-          background-image: radial-gradient(#e5dcf1 0%, transparent 50%, #BEA9DE);
-          border-radius: 50%;
-          width: 280px;
-          height: 280px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: top;
-          padding-right: 3%;
-          h2 {
-            display: flex;
-            font-family: $font1;
-            font-size: 30px;
-            font-weight: normal;
-            margin-top: 20%;
-            margin-bottom: 12px;
-            color: $color-2;
-            transform: scaleX(0);
-            animation: transformTitle 1.9s ease forwards;
-            transform-origin: 100%;
-    
-          }
-          @keyframes transformTitle {
-            to{
-                transform: scaleX(1);
-            }
-          
-          }
-          p {
-            margin-bottom: 10px;
-            color: $color-4;
-            font-family: $font1;
-            font-size: 30px;
-    
-          }
-          ul{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            i{
-                font-size:30px;
-                margin: 5px;
-                color: $color-2;
-            }
-      
-          }
-        }
-        .img-content {
-          text-align: left;
-          margin-left: 12%;
-          width: 75%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-    
-          .img-container {
-            border-radius: 5px;
-            box-shadow: 4px 2px 4px rgba(51, 51, 51, 0.26);
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-            margin-top: -150px;
-            margin-right: -50px;
-            position: relative;
-            i{
-              position: absolute;
-              color: $color-2;
-              margin-left: 45%;
-              margin-top: 25%;
-              opacity:0.70 ;
-            }
-    
-            &:hover .description,
-            .description:hover {
-              visibility: visible;
-              transform: translateY(0);
-              position: absolute;
-              color: black;
-            
-            }
-    
-            img {
-              overflow: hidden;
-              object-fit: cover;
-              object-position: center;
-              width: 100%;
-              height: 550px;
-              position: absolute;
-              transition: 0.4s ease-out;
-    
-              &:hover,
-              .description:hover img {
-                transform: scale(1.2);
-                filter: opacity(10%) contrast(150%);
-              }
-            }
-            .description {
-              position: absolute;
-              bottom: 20px;
-              left: 0;
-              width: 100%;
-              padding: 1rem;
-              margin: 0 auto;
-              line-height: 34px;
-              font-size: 1.5rem;
-              visibility: hidden;
-              transition: 0.5s ease;
-              transform: translateY(200px);
-    
-              h3 {
-                padding-bottom: 10px;
-                color: $color-2;
-              }
-              
-            }
-           
-          }
-        }
-      }
-    
-  }
-  
-    .carousel-control-prev{
-        opacity: 1;
-        left: 5%;
-        top: 10%;
-    }
-    .carousel-control-next{
-      opacity: 1;
-      right: 1%;
-      top: 10%;
-    }
-    
-    .carousel-control-prev-icon,.carousel-control-next-icon{
-        background-image: none;
-        i{
-            color: $color-2;
-            font-size: 40px;
-        }
-        &:hover{
-           transform: scale(1.5);
-        }
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
 }
+
+.project{
+  width: 25%;
+  height: 370px;
+  color: $color-2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  background: linear-gradient(to top, #434343,transparent, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+  }
+  img{
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 30px;
+  }
+}
+
 .button-contact{
     width: 100%;
     display: flex;
@@ -166,86 +52,29 @@
   //mobile
   @media screen and (min-width:320px) and (max-width:750px){
     .container{
-      margin-top: auto;
+      flex-direction: column;
+      align-items: center;
       .project{
-        .project-main{
-          .project-content{
-            width: 220px;
-            height: 220px;
-            margin-left: 0;
-            .languages{
-              display: flex;
-              flex-direction: row;
-            }  
-          }
-          .img-content{
-            margin-top: 60px;
-            margin-left: 7%;
-          }
-        }
+        width: 90%;
+        margin: 20px 0 20px 0;
       }
-      .carousel-control-prev{
-        left: 0;
-        top: 10%;
-      }
-      .carousel-control-next{
-        right: -4%;
-        top: 10%;
-      }
-  
-  
     }
   }
   
   /* tablette */
   @media screen and (min-width:750px) and (max-width:1100px){
     .container{
-      padding: 0;
-      margin: -10px 10px auto;
-      #projet{
-        width: 100%;
-        .project{
-          .project-main{
-            .project-content{
-             .languages{
-               display: flex;
-               flex-direction: row;
-             }  
-            }
-            .img-content{
-              width: 90%;
-              margin: 20px;
-            }
-          }
-        }
+      margin-top: 40px;
+      .project{
+        margin: 20px 10px 20px 10px;
+        width: 30%;
       }
-      .carousel-control-prev{
-        left: -30px;
-        top: 10%;
-      }
-      .carousel-control-next{
-        right: -45px;
-        top: 10%;
-      }
-
   
-
     }
   }
   
   /* grand ecran */
   @media screen  and (min-width:1101px) and (max-width:1400px) {
-   .project{
-     .project-main{
-       margin-top: 300px;
-       .project-content{
-         width: 25%;
-       }
-         .img-content{
-           margin-left:28%;
-         }    
-     }
-   }
   
   }
   

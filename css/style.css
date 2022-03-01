@@ -91,13 +91,13 @@ body .app {
     transform: scale(1);
   }
 }
-main .home-main {
+.home-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 110px;
 }
-main .home-main .main-content {
+.home-main .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ main .home-main .main-content {
   border-radius: 100%;
   animation: transformLogo 2.5s ease forwards;
 }
-main .home-main .main-content h1, main .home-main .main-content h2 {
+.home-main .main-content h1, .home-main .main-content h2 {
   font-size: 80px;
   font-style: italic;
   font-weight: 100;
@@ -114,7 +114,7 @@ main .home-main .main-content h1, main .home-main .main-content h2 {
   user-select: text;
   color: white;
 }
-main .home-main .service {
+.home-main .service {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -124,28 +124,29 @@ main .home-main .service {
   font-weight: inherit;
   color: whiteSmoke;
 }
-main .home-main .service p {
+.home-main .service p {
   margin-bottom: 50px;
 }
-main .service_explication {
+
+.service_explication {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 215px;
   font-family: "arial", cursive;
   font-size: 30px;
   font-weight: inherit;
   color: whiteSmoke;
   scroll-behavior: smooth;
+  margin-bottom: 90px;
 }
-main .service_explication .dispo1, main .service_explication .dispo2 {
+.service_explication .dispo1, .service_explication .dispo2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
 }
-main .service_explication .dispo1 .explication1, main .service_explication .dispo2 .explication1 {
+.service_explication .dispo1 .explication1, .service_explication .dispo2 .explication1 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -164,7 +165,7 @@ main .service_explication .dispo1 .explication1, main .service_explication .disp
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   animation: apparition 1.5s;
 }
-main .service_explication .dispo1 .explication2, main .service_explication .dispo2 .explication2 {
+.service_explication .dispo1 .explication2, .service_explication .dispo2 .explication2 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -183,7 +184,7 @@ main .service_explication .dispo1 .explication2, main .service_explication .disp
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   animation: apparition 2.5s;
 }
-main .service_explication .dispo1 .explication3, main .service_explication .dispo2 .explication3 {
+.service_explication .dispo1 .explication3, .service_explication .dispo2 .explication3 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -202,7 +203,7 @@ main .service_explication .dispo1 .explication3, main .service_explication .disp
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   animation: apparition 3.5s;
 }
-main .service_explication .dispo1 .explication4, main .service_explication .dispo2 .explication4 {
+.service_explication .dispo1 .explication4, .service_explication .dispo2 .explication4 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -307,72 +308,40 @@ main .service_explication .dispo1 .explication4, main .service_explication .disp
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 750px) {
-  .home .navigation {
-    font-size: 30px;
-  }
-
-  .home-main .main-content {
-    width: 250px;
-    height: 250px;
-  }
-  .home-main .main-content img {
-    width: 100px;
-    height: 100px;
-  }
-  .home-main .main-content h1 {
-    font-size: 50px;
-    width: auto;
-  }
-
-  .service_explication {
-    flex-direction: column;
-  }
-  .service_explication .dispo1, .service_explication .dispo2 {
+  ul {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin: 5px 0 5px 0;
   }
-  .service_explication .dispo1 .explication1, .service_explication .dispo1 .explication2, .service_explication .dispo1 .explication3, .service_explication .dispo1 .explication4, .service_explication .dispo2 .explication1, .service_explication .dispo2 .explication2, .service_explication .dispo2 .explication3, .service_explication .dispo2 .explication4 {
-    width: 300px;
-    height: 300px;
-    margin: inherit;
-    font-size: 25px;
+
+  .home-main {
+    text-align: center;
+  }
+
+  .footer {
+    background: linear-gradient(to bottom, #434343, transparent, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer ul li {
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1050px) {
-  .home .navigation {
-    font-size: 35px;
-  }
-
-  .home-main .main-content {
-    width: 350px;
-    height: 350px;
-  }
-  .home-main img {
-    width: 100px;
-    height: 100px;
-  }
-  .home-main h1 {
-    font-size: 50px;
-    width: auto;
-  }
-
-  .service_explication .dispo1, .service_explication .dispo2 {
-    width: 100%;
-    margin: inherit;
-    justify-content: space-around;
-  }
-  .service_explication .dispo1 .explication1, .service_explication .dispo1 .explication2, .service_explication .dispo1 .explication3, .service_explication .dispo1 .explication4, .service_explication .dispo2 .explication1, .service_explication .dispo2 .explication2, .service_explication .dispo2 .explication3, .service_explication .dispo2 .explication4 {
-    width: 370px;
-    height: 370px;
-    margin: inherit;
+  .home-main {
+    text-align: center;
   }
 }
 /* grand ecran */
-@media screen and (min-width: 850px) and (max-width: 1400px) {
+@media screen and (min-width: 1050px) and (max-width: 1050px) {
   .navigation {
     font-size: 35px;
+  }
+
+  .service_explication {
+    margin-bottom: 215px;
   }
 }
 .container {

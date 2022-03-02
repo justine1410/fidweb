@@ -21,11 +21,12 @@ for(let i=0; i<input.length; i++){
     //fonction pour le message d'erreur
     function message(boolean, ok, erreur){
         if(boolean == true){
-            p[i].innerHTML = ok;
-            p[i].style.color="green";
+            input[i].style.background='#f1f1f1';
+            p[i].style.display="none";
         }else{
             p[i].innerHTML = erreur;
-            p[i].style.color="red"
+            p[i].style.color="red";
+            input[i].style.background='#f3c7c7';
         }
     }
 
@@ -50,17 +51,17 @@ for(let i=0; i<input.length; i++){
     });
 };
 
-message.addEventListener("input", (e)=>{
-    if(message.value==""){
-        let formMessage = document.querySelector(".form-message");
-        formMessage.innerHTML = "veuillez remplir ce champ !"
-        formMessage.style.color="red"
-    }else{
-        let formMessage = document.querySelector(".form-message");
-        formMessage.innerHTML = "champ valide"
-        formMessage.style.color="green"
-    }
-})
+// message.addEventListener("input", (e)=>{
+//     if(message.value==""){
+//         let formMessage = document.querySelector(".form-message");
+//         formMessage.innerHTML = "veuillez remplir ce champ !"
+//         formMessage.style.color="red"
+//     }else{
+//         let formMessage = document.querySelector(".form-message");
+//         formMessage.innerHTML = "champ valide"
+//         formMessage.style.color="green"
+//     }
+// })
 
 envoi.addEventListener('click', (e)=>{
     e.preventDefault()

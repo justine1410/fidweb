@@ -3,20 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188630746-1">
-        </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-188630746-1');
-        </script>
-          
             
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="shortcut icon" href="./img/test3.png" >
+        <link rel ="shortcut icon" href="./img/logo1.png" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
         <link rel="stylesheet" href="./css/style.css">
 
@@ -60,21 +49,50 @@
 
         <main>
             <div class="home-main">
-                <div class="main-content">
-                    <h1>Fidweb</h1>
-                </div>
-                <div class="service">
-                    <p>Site en cours de refonte</p>
-                    <div class="encours">
-                        <p></p>
-                    </div>
-                        
-                </div>
-                
-        
-            </div>
-            <div class="service_explication" >
-    
+                <h2>contactez-nous</h2>
+                <form class="form">
+                    <label for="nom">Nom *</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    />
+                    <p class="message"></p>
+
+                    <label for="société">Société</label>
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                    />
+                    <p class="message"></p>
+
+                    <label for="téléphone">Téléphone</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                    />
+                    <p class="message"></p>
+
+                    <label for="email">Email *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    />
+                    <p class="message"></p>
+                    
+                    <label for="message">Message *</label>
+                    <textarea id="message"  required></textarea> 
+                    
+                    <p class="messageTexte"></p>
+                    <div class="form-message"></div>
+
+                    <button class="button">Envoyer</button>    
+                </form>
             </div>
         
             <!-- <div class="contact-form">
@@ -198,11 +216,9 @@
             </div>
     
         </footer>
-    
-    
 
         <script src="./js/index.js"></script>
-
+        <script src="./js/contact.js"></script>
 
      </body>
     

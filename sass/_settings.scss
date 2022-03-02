@@ -61,6 +61,11 @@ body {
       min-height: 0;
       z-index: -1;
     }
+    @media screen and (min-width:320px) and (max-width:750px){
+      .fond{
+        transform: translate(-25%);
+      }
+    }
     height: 100vh;
     color: $color-2;
     .app{

@@ -53,6 +53,11 @@ body .fond {
   min-height: 0;
   z-index: -1;
 }
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  body .fond {
+    transform: translate(-25%);
+  }
+}
 body .app {
   height: 100vh;
 }

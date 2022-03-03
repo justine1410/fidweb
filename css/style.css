@@ -98,12 +98,66 @@ body .app {
     transform: scale(1);
   }
 }
-.home-main {
+@keyframes fixe {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header {
+  animation: fixe 1s;
+}
+header .home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  background: #434343;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, transparent, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, transparent, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header .home .navigation {
+  font-size: 30px;
+  line-height: 40px;
+  color: whiteSmoke;
+  font-family: "arial", cursive;
+  user-select: none;
+  width: 100%;
+}
+header .home .navigation ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+header .home .navigation ul li:hover {
+  transform: scale(1.2);
+  color: black;
+}
+header .home .navigation .nav-portfolio {
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
+}
+
+main {
+  animation: fixe 1.5s;
+}
+main .home-main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.home-main .main-content {
+main .home-main .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,7 +167,7 @@ body .app {
   animation: transformLogo 2.5s ease forwards;
   margin-top: 110px;
 }
-.home-main .service {
+main .home-main .service {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -123,11 +177,10 @@ body .app {
   font-weight: inherit;
   color: whiteSmoke;
 }
-.home-main .service p {
+main .home-main .service p {
   margin-bottom: 50px;
 }
-
-.service_explication {
+main .service_explication {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -139,14 +192,14 @@ body .app {
   scroll-behavior: smooth;
   margin-bottom: 90px;
 }
-.service_explication .dispo1, .service_explication .dispo2 {
+main .service_explication .dispo1, main .service_explication .dispo2 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   width: 100%;
   justify-content: space-evenly;
 }
-.service_explication .dispo1 .explication1, .service_explication .dispo2 .explication1 {
+main .service_explication .dispo1 .explication1, main .service_explication .dispo2 .explication1 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -165,7 +218,7 @@ body .app {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   animation: apparition 1.5s;
 }
-.service_explication .dispo1 .explication2, .service_explication .dispo2 .explication2 {
+main .service_explication .dispo1 .explication2, main .service_explication .dispo2 .explication2 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -184,7 +237,7 @@ body .app {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   animation: apparition 2.5s;
 }
-.service_explication .dispo1 .explication3, .service_explication .dispo2 .explication3 {
+main .service_explication .dispo1 .explication3, main .service_explication .dispo2 .explication3 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -203,7 +256,7 @@ body .app {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   animation: apparition 3.5s;
 }
-.service_explication .dispo1 .explication4, .service_explication .dispo2 .explication4 {
+main .service_explication .dispo1 .explication4, main .service_explication .dispo2 .explication4 {
   width: 400px;
   height: 300px;
   font-size: 25px;
@@ -223,44 +276,8 @@ body .app {
   animation: apparition 4.5s;
 }
 
-.home {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px;
-  background: #434343;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, transparent, #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #434343, transparent, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.home .navigation {
-  font-size: 30px;
-  line-height: 40px;
-  color: whiteSmoke;
-  font-family: "arial", cursive;
-  user-select: none;
-  width: 100%;
-}
-.home .navigation ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 15px;
-}
-.home .navigation ul li:hover {
-  transform: scale(1.2);
-  color: black;
-}
-.home .navigation .nav-portfolio {
-  cursor: pointer;
-  display: flex;
-  transition: 0.5s;
-}
-
 .footer {
+  animation: fixe 2s;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -292,10 +309,10 @@ body .app {
 .footer .navigation ul li:hover {
   transform: scale(1.2);
 }
-.footer .navigation .nav-portfolio {
-  cursor: pointer;
+.footer .navigation ul .reseaux {
   display: flex;
-  transition: 0.5s;
+  justify-content: space-evenly;
+  width: 10%;
 }
 
 /* mobile */
@@ -313,12 +330,15 @@ body .app {
     background: linear-gradient(to bottom, #434343, transparent, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-  .footer ul {
+  .footer .navigation ul {
     flex-direction: column;
     align-items: center;
   }
-  .footer ul li {
+  .footer .navigation ul li {
     font-size: 20px;
+  }
+  .footer .navigation ul .reseaux {
+    width: 50%;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1050px) {
@@ -364,6 +384,7 @@ body .app {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #434343, transparent, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: apparition 3s;
 }
 .project h3 {
   font-size: 25px;
@@ -401,6 +422,9 @@ body .app {
     width: 90%;
     margin: 20px 0 20px 0;
   }
+  .container .project ul {
+    flex-direction: row;
+  }
 }
 /* tablette */
 @media screen and (min-width: 750px) and (max-width: 1100px) {
@@ -429,6 +453,7 @@ body .app {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #434343, transparent, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: apparition 3s;
 }
 .form input, .form textarea {
   width: 100%;

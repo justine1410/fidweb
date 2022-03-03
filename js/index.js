@@ -38,7 +38,7 @@ button.addEventListener('click', (e)=>{
 
     `)
 
- window.scrollTo(0,720)
+ window.scrollTo(0,620)
 
 
 })

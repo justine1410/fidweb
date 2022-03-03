@@ -1,83 +1,13 @@
-.home-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    user-select:none;
-    border-radius: 100%;
-    animation: transformLogo 2.5s ease forwards;
-    margin-top: 110px;
-  }
-  .service{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: $font1;
-    font-size: 30px;
-    font-weight:inherit;
-    color: $color-4;
-    p{
-      margin-bottom: 50px;
-    }
-} 
-}
-
-.service_explication{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-top: 20px;
-font-family: $font1;
-font-size: 30px;
-font-weight:inherit;
-color: $color-4;
-scroll-behavior:smooth;
-margin-bottom: 90px;
-
-.dispo1, .dispo2{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  width: 100%;
-  justify-content: space-evenly;
-    .explication1{
-      @include explication;
-      animation: apparition 1.5s ;
-
-    }
-    .explication2{
-      @include explication;
-      animation:apparition 2.5s;
-
-    }
-    .explication3{
-      @include explication;
-      animation: apparition 3.5s ;
-
-    }
-    .explication4{
-      @include explication;
-      animation: apparition 4.5s ;
-
-    }
-
-  }  
-}
-
-
-.home{
+header{
+  animation: fixe 1s;
+  .home{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding: 15px;
     @include gradient-color;    
-
+  
     .navigation {
         font-size: 30px;
         line-height: 40px;
@@ -88,7 +18,7 @@ margin-bottom: 90px;
         
         ul{
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           width: 100%;
           margin-top: 15px;
           
@@ -105,9 +35,93 @@ margin-bottom: 90px;
           transition: .5s;
         }
       }
+  
+  }
+  
 
 }
+
+main{
+  animation: fixe 1.5s;
+
+  .home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      user-select:none;
+      border-radius: 100%;
+      animation: transformLogo 2.5s ease forwards;
+      margin-top: 110px;
+    }
+    .service{
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $font1;
+      font-size: 30px;
+      font-weight:inherit;
+      color: $color-4;
+      p{
+        margin-bottom: 50px;
+      }
+  } 
+  }
+  
+  .service_explication{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-family: $font1;
+  font-size: 30px;
+  font-weight:inherit;
+  color: $color-4;
+  scroll-behavior:smooth;
+  margin-bottom: 90px;
+  
+  .dispo1, .dispo2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+      .explication1{
+        @include explication;
+        animation: apparition 1.5s ;
+  
+      }
+      .explication2{
+        @include explication;
+        animation:apparition 2.5s;
+  
+      }
+      .explication3{
+        @include explication;
+        animation: apparition 3.5s ;
+  
+      }
+      .explication4{
+        @include explication;
+        animation: apparition 4.5s ;
+  
+      }
+  
+    }  
+  }
+  
+
+}
+
+
 .footer{
+  animation: fixe 2s;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -134,13 +148,12 @@ margin-bottom: 90px;
         li:hover{
           transform:scale(1.2);
       }
+      .reseaux{
+        display: flex;
+        justify-content: space-evenly;
+        width: 10%;
+      }
       
-    }
-  
-    .nav-portfolio {
-      cursor: pointer;
-      display: flex;
-      transition: .5s;
     }
   }
 
@@ -158,13 +171,20 @@ margin-bottom: 90px;
     }
     .footer{
       background: linear-gradient(to bottom, #434343,transparent, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        ul{
-          flex-direction: column;
-          align-items: center;
-          li{
-            font-size: 20px;
-
+        .navigation{
+          ul{
+            flex-direction: column;
+            align-items: center;
+            li{
+              font-size: 20px;
+  
+            }
+            .reseaux{
+              width: 50%;
+            }
           }
+  
+
         }
     
     }

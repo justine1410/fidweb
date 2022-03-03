@@ -32,50 +32,43 @@
   }
 }
 
-  /* mobile */
-  @media screen and (min-width:320px) and (max-width:750px){
-  .contacts{
+.contact{
+  width: 70%;
+  display: flex;
+  border-radius: 10px; 
+  box-shadow: inset 0 1px 20px 1px #d0d0d0;
+  margin-bottom: 30px;
+  @include gradient-color;
+  .carte{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    iframe{
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .coordonee{
+    width: 100%;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
-    .contact-form{
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-      margin-left: 5%;
-      form{
-        width: 90%;
-        margin-left: inherit;
-      }
-      
+    justify-content: space-evenly;
+    align-items: center;
+    .coordonee_content{
+      text-align: center;
     }
-    .contact{
-      width: 100%;
-      position: inherit;
-      .contact-infos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        border-top-left-radius: inherit;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-top: 0;
-        .address, .email, .phone, .credits{
-          position: initial;
-          margin-top: 10px;
-          .content{
-            h4{
-              margin-bottom: 5px;
-            }
-          }
-        }
-        .logo{
-          display: none;
-        }
-        
-      }
-  
+  }
+}
+
+  /* mobile */
+  @media screen and (min-width:320px) and (max-width:750px){
+  .contact{
+    flex-direction: column;
+    width: 80%;
+    .coordonee{
+      height: 300px;
     }
   }
       
@@ -83,51 +76,9 @@
 
 /* tablette */
 @media screen and (min-width:750px) and (max-width:1100px){
-  .contact{ 
-    position: inherit; 
-    width: 100%;
-
-    .contact-infos{
-      display: flex;
-      position: inherit;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      border-top-left-radius: inherit;
-      width: 100%;
-      margin-left: 0;
-      margin-top: auto;
-      .address, .email, .phone, .credits{
-        position: initial;
-        margin-top: 10px;
-        .content{
-          h4{
-            margin-bottom: 5px;
-          }
-        }
-      }
-      .logo{
-        display: none;
-      }
-
-    }
+  .contact{
+    width: 90%;
   }
-
-  .contact-form{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    form{
-      margin-left: 0;
-      h2{
-        &::after{
-          left:200px
-        }
-  
-    }
-    }
-  }
-
 }
 
 /* grand ecran */

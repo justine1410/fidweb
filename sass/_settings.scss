@@ -33,8 +33,15 @@ a:hover{
 
 }
 body {
+  display: table;
+  width: 100%;
   height: 100vh;
   color: $color-2;
+  background-color: #000000;
+  background-image: url('../img/orion-nebula-11107.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
   h1{
     font-size: 80px;
     font-style: italic;
@@ -55,8 +62,8 @@ body {
   }
   .fond{
     position: fixed;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     min-width: 100%;
     min-height: 0;
     z-index: -1;
@@ -78,7 +85,7 @@ body {
   margin: 20px 0 20px 0;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s ease-out;
   padding: 15px;
   display: flex;
   align-items: center;

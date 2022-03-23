@@ -28,7 +28,7 @@ button.addEventListener('click', (e)=>{
 
         <div class="explication4">
             <h3>Responsive design</h3>
-            <p>En cette époque où tout le monde à un smartphone ou une tablette tous les sites sont comptatible
+            <p>En cette époque où tout le monde a un smartphone ou une tablette tous les sites sont compatibles
                 sur mobile ainsi que sur tablette
             </p>
         </div>

@@ -31,6 +31,8 @@
   img{
     width: 100%;
     height: 130px;
+    object-fit: cover;
+    object-position: top center;
   }
   ul{
     display: flex;
